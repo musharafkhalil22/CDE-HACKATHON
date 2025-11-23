@@ -1,49 +1,77 @@
-"# Banggood Data Pipeline Project" 
-I have completed the full Banggood Product Data Pipeline project as required in the Case Study Exam. The project includes end-to-end implementation of web scraping, data transformation, exploratory data analysis, SQL loading, and aggregated SQL analytics.
+📊 Banggood Data Pipeline Project
 
-Part 1 — Data Extraction (Web Scraping)
+This project delivers a complete end-to-end data engineering and analytics pipeline, fulfilling all requirements of the Banggood Case Study Exam. It covers web scraping, data cleaning, exploratory analysis, SQL Server loading, and SQL aggregated reporting.
 
-Scraped 5 selected categories from Banggood.com using requests, BeautifulSoup, and Selenium.
+🧩 Part 1 — Data Extraction (Web Scraping)
 
-Extracted product name, price, rating, review count, product URL, and stock availability.
+✔ Scraped 5 Banggood categories using:
 
-Implemented multi-page pagination and stored the scraped output in CSV format.
+requests
 
-Part 2 — Data Cleaning & Transformation
+BeautifulSoup
 
-Loaded raw data into pandas and cleaned price, rating, and review fields.
+Selenium
 
-Handled missing values and standardized formats.
+✔ Extracted:
 
-Created derived features such as Value Score (rating/price) and Review Intensity (reviews per price unit).
+Product Name
 
-Part 3 — Exploratory Data Analysis (Minimum 5 Analyses)
+Price
 
-Performed multiple category-wise and overall analyses using Python, including:
+Rating
 
-Price distribution
+Review Count
 
-Rating vs price correlation
+Product URL
 
-Top reviewed products
+Stock Availability
 
-Best value products
+✔ Implemented:
 
-Stock availability percentage
+Full pagination
 
-All analyses include visualizations and insights.
+Error handling
 
-Part 4 — Load into SQL Server
+Export to CSV
 
-Created SQL schema for storing product data.
+🧹 Part 2 — Data Cleaning & Transformation
 
-Loaded cleaned data into SQL Server using pyodbc.
+✔ Loaded raw CSV into pandas
+✔ Cleaned price, rating, and review values
+✔ Handled missing and inconsistent data
+✔ Standardized formats across all categories
 
-Validated inserts through row-count checks and sample queries.
+🔧 Derived Features
 
-Part 5 — SQL Aggregated Analysis (Minimum 5 Queries)
+Value Score = rating ÷ price
 
-Wrote and executed SQL queries including:
+Review Intensity = reviews per price unit
+
+📈 Part 3 — Exploratory Data Analysis (EDA)
+
+Performed 5+ visual analyses, including:
+
+📌 Price Distribution per Category
+
+📌 Rating vs Price Correlation
+
+📌 Top Reviewed Products
+
+📌 Best Value Products
+
+📌 Stock Availability Percentage
+
+All insights generated through Python visualizations and statistical summaries.
+
+🗄 Part 4 — Load Data into SQL Server
+
+✔ Designed SQL schema (single or multi-table)
+✔ Inserted transformed data using pyodbc
+✔ Validated load using row-count and sample queries
+
+🧮 Part 5 — SQL Aggregated Analysis
+
+Executed 5+ analytical SQL queries, including:
 
 Average price per category
 
